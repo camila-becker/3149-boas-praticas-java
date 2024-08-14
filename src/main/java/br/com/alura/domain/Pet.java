@@ -3,12 +3,14 @@ package br.com.alura.domain;
 public class Pet {
 
     private Long id;
-    private final String tipo;
-    private final String nome;
-    private final String raca;
-    private final Integer idade;
-    private final String cor;
-    private final Float peso;
+    private String tipo;
+    private String nome;
+    private String raca;
+    private Integer idade;
+    private String cor;
+    private Float peso;
+    
+    public Pet(){}
 
     public Pet(String tipo, String nome, String raca, Integer idade, String cor, Float peso) {
         this.tipo = tipo;
@@ -39,4 +41,11 @@ public class Pet {
         return idade;
     }
 
+    public String getCor() {
+        return cor;
+    }
+
+    public Float getPeso() {
+        return peso;
+    }
 }
